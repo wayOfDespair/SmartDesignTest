@@ -22,10 +22,10 @@ curl --location --request POST 'http://127.0.0.1:8080/items' --header 'Content-T
 --data-raw '{
     "name": "iPhone 12",
     "description": "Brand new iPhone",
-    "params": [
-        {"price": "$999"},
-        {"color": "black"}
-    ]
+    "params": {
+        "color": "black",
+        "price": "$999"
+    }
 }'
 ```
 ###### 2. Получить список товаров
